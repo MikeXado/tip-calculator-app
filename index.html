@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/0c8fb3eda5.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <main class="calculator-page__container">
+      <div class="calculator-page__logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <div class="calculator-card__container">
+        <div class="calculator-amount__inputs">
+          <div class="bill-wrapper">
+            <p class="bill-text">Bill</p>
+            <div class="input-wrapper" data-required="$">
+              <input type="number" id="bill-amount"  placeholder="0" onfocus="this.placeholder = ''"
+                onblur="this.placeholder ='0'">
+            </div>
+          </div>
+
+          <div class="select-tip__wrapper">
+            <p class="select-tip__text">Select Tip %</p>
+            <div class="select-tip__butttons">
+              <div class="select-tip-button" id="first">
+                <a class="precent"  href="#">5%</a>
+              </div>
+              <div class="select-tip-button" id="second">
+                <a class="precent" href="#">10%</a>
+              </div>
+              <div class="select-tip-button" id="third">
+                <a class="precent" href="#">15%</a>
+              </div>
+              <div class="select-tip-button" id="fourth">
+                <a class="precent" href="#">25%</a>
+              </div>
+              <div class="select-tip-button" id="fifth">
+                <a class="precent" href="#">50%</a>
+              </div>
+              <div class="select-tip-button">
+                <input type="number" placeholder="Custom"  id="customInput" onfocus="this.placeholder = ''"
+                  onblur="this.placeholder ='Custom'">
+              </div>
+            </div>
+          </div>
+
+          <div class="number-people__wrapper">
+            <div class="number-people__text">
+              <p>Number of People</p>
+              <span class="warning">Can't be zero!</span>
+            </div>
+            
+            <div class="number-people__input">
+              <input type="number" placeholder="0" id="numberPeople" onfocus="this.placeholder = ''"
+                onblur="this.placeholder ='0'">
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator-amount__results">
+          <div class="calculator-amount__content">
+            <div class="tip-amount__wrapper">
+              <div class="tip-amount__text">
+                <p>Tip Amount<br><span><i>/</i>person</span></p>
+              </div>
+              <div class="tip-amount__result"><span class="amount-number" id="tip-amount">$0.00</span></div>
+            </div>
+            <div class="total-amount__wrapper">
+              <div class="tip-amount__text">
+                <p>Total<br><span><i>/</i>person</span></p>
+              </div>
+              <div class="total-amount__result">
+                <span class="amount-number" id="total">$0.00</span></div>
+            </div>
+
+            <div class="amount-button__wrapper active">
+              <a class="calc" href="#">Reset</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+  </div>
+
+
+
+  </main>
+
+
+
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
